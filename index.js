@@ -155,7 +155,7 @@ Aşağdaki milDonusturucu fonksiyonunu aşağıdakileri kullanarak tamamla:
 */
 
 function milDonusturucu(kiliometre) {
-  return (kiliometre * 0.62137);
+  return (kiliometre * 0.621371);
 };
 console.log(milDonusturucu(100));
 
@@ -171,7 +171,7 @@ Google'da arama ipucu: "feet cm dönüştürme"
 */
 
 function feetDonusturucu(Santimetre) {
-  return (Santimetre * 0.032808399);
+  return (Santimetre / 30.48);
 };
 
 /* Görev 5 : 5 küçük maymun yatakta zıplamış şarkısını çocuklar için hazırladığımı varsayalım. https://www.youtube.com/watch?v=e4EJ34xnlxk */
@@ -191,14 +191,24 @@ Aşağıdakileri cocukSarkisi fonksiyonunda yap:
 
 
 function cocukSarkisi(sayı) {
-  console.log(sayı+" "+ "küçük maymun yatakta zıplamış, biri düşüp başını çarpmış, Anne doktoru aramış, Doktor çok kmış: Bir daha yatakta zıplamak yok!");
+  return (sayı+" "+ "küçük maymun yatakta zıplamış, biri düşüp başını çarpmış, Anne doktoru aramış, Doktor çok kızmış: Bir daha yatakta zıplamak yok!");
 };
-let maymunSayısı=5;
+
+
+
+  let maymunSayısı=5;
 
 while (maymunSayısı>0) {
-  console.log(cocukSarkisi(maymunSayısı));
-  maymunSayısı-= 1;
+   
+    console.log(cocukSarkisi(maymunSayısı));
+
+
+    maymunSayısı-=1;
 };
+
+
+
+console.log(cocukSarkisi(5));
 /* Görev 6 : Not Hesaplayıcı */
 
 /*
@@ -228,7 +238,7 @@ function notHesapla(not)
   if(not>60 || not==60){
     return 'D aldın'
   }
-  return "F"
+  return "F aldın"
 
 };
 
